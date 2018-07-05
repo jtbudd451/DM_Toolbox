@@ -1,6 +1,6 @@
 var i = 6;
 var DIE_MIN = 1;
-var Alltext = " ";
+var Alltext = "";
 
 // Roll a # sided die
 function roll_die(max){
@@ -10,5 +10,10 @@ function roll_die(max){
 
 function add_text(text) {
 	Alltext += text + "\n";
+	document.getElementById("story").value = Alltext
+}
+
+function clear_text() {
+	Alltext = "";
 	document.getElementById("story").value = Alltext
 }

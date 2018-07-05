@@ -17,16 +17,17 @@
 		<button type="button" onclick="document.getElementById('story').innerHTML = add_text(roll_die(13))">Roll 12 Sided</button>
 		<button type="button" onclick="document.getElementById('story').innerHTML = add_text(roll_die(21))">Roll 20 Sided</button>
 		<button type="button" onclick="document.getElementById('story').innerHTML = add_text(roll_die(101))">Roll Percent </button>
+		<button type="button" onclick="document.getElementById('story').innerHTML = clear_text()">Clear Rolls</button>
 		<!-- <p id="dice_output"></p> -->
 	</div>
 
 	<div id="text_area">
-		<h3>Story Here</h3>
+		<h3>Die Rolls</h3>
 		<textarea id="story" rows="10" cols="50">Story will go here</textarea>
 
-		<h3>Add event</h3>
+<!-- 		<h3>Add event</h3>
 		<textarea id="event" rows="5" cols="50">Type event here</textarea>
-		<button type="button" onclick="add_text(document.getElementById('event').innerHTML)">Add event</button>
+		<button type="button" onclick="add_text(document.getElementById('event').innerHTML)">Add event</button> -->
 	</div>
 
 	<script type="text/javascript" src="js/dm.js"></script>
