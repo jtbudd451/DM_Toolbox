@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>DM Hub</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -9,6 +11,7 @@
 		<h1>DM Tools</h1>
 	</div>
 
+	<!-- Dice buttons -->
 	<div id="dice">
 		<button type="button" onclick="document.getElementById('story').innerHTML = add_text(roll_die(5))">Roll 4 Sided</button>
 		<button type="button" onclick="document.getElementById('story').innerHTML = add_text(roll_die(7))">Roll 6 Sided</button>
@@ -21,14 +24,24 @@
 		<!-- <p id="dice_output"></p> -->
 	</div>
 
+	<!-- Log area  -->
 	<div id="text_area">
 		<h3>Die Rolls</h3>
 		<textarea id="story" rows="10" cols="50">Story will go here</textarea>
 
-<!-- 		<h3>Add event</h3>
+		<h3>Add event</h3>
 		<textarea id="event" rows="5" cols="50">Type event here</textarea>
-		<button type="button" onclick="add_text(document.getElementById('event').innerHTML)">Add event</button> -->
+		<button type="button" onclick="add_text(document.getElementById('event').innerHTML)">Add event</button>
 	</div>
+
+	<!-- Initiative tracker  -->
+	<form>
+		Character name:<br>
+		<input type="text" name="named">
+		<br>Race:<br>
+		<input type="text" name="named">
+
+	</form>
 
 	<script type="text/javascript" src="js/dm.js"></script>
 </body>
